@@ -1,5 +1,5 @@
 import React from "react";
-import HomeNavigation from "./HomeNavigation";
+import HomeNavigation from "../Components/HomeNavigation";
 import 'animate.css';
 
 const Home = () => {
