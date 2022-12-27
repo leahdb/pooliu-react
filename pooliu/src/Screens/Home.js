@@ -1,6 +1,6 @@
 import React from "react";
 import HomeNavigation from "../Components/HomeNavigation";
-import 'animate.css';
+import "animate.css";
 
 const Home = () => {
   return (

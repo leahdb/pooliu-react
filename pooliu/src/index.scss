@@ -660,3 +660,97 @@ $light-blue-gray: #E8ECF1;
   } 
   }
 }
+.pickride-page{
+  * {
+    font-family: $font;
+  }
+  
+  .nav {
+    background-color: $blue-grey;
+    .profile-pic {
+      height: 50px;
+      border-radius: 50%;
+    }
+    .drop {
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: $dark-blue;
+      }
+    }
+  }
+  .title {
+    color: $darker-blue;
+    font-size: 38px;
+    font-family: $font;
+    font-weight: bolder;
+  }
+  .location-btn {
+    width: 100%;
+    font-weight: 500;
+    color: $dark-blue;
+    font-size: 20px;
+    border: solid $dark-blue 2px;
+  }
+  .select {
+    //width: 300px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid $dark-blue 2px;
+    border-radius: 0;
+    font-weight: 500;
+    color: $dark-blue;
+    font-size: 20px;
+  }
+  
+  .dropdown {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid $dark-blue 2px;
+  }
+  
+  .location-btn {
+    width: 100%;
+    font-weight: 500;
+    color: $dark-blue;
+    font-size: 20px;
+    border: solid $dark-blue 2px;
+  }
+  
+  .seat-label {
+    color: $dark-blue;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    border: solid $dark-blue 2px;
+  }
+  
+  .number {
+    text-align: center;
+    border: solid $dark-blue 2px;
+  }
+  .add {
+    width: 40px;
+    font-weight: bold;
+    color: $yellow;
+    background-color: $dark-blue;
+    border: solid $dark-blue 2px;
+  }
+  .btn-pick {
+    background-color: $dark-blue;
+    padding: 0%;
+  }
+  .svgSpin {
+    transform: rotate(180deg);
+  }
+  .text-buttom-left{
+    font-weight: bold;
+    color: $dark-blue;
+  }
+  .svg-filter{
+    border: 2em;
+    background-color: #ECF0F3;
+  }
+}
