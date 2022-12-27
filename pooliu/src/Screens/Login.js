@@ -53,7 +53,7 @@ const Login = () => {
                   <a href="#" className="submit d-flex justify-content-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      // xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink="http://www.w3.org/1999/xlink"
                       width="218"
                       height="70"
                       viewBox="0 0 218 70"
