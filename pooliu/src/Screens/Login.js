@@ -1,14 +1,16 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const Login = () => {
   return (
+    <div className="login-page mt-3">
     <div className="container">
       <div className="row">
-        <div className="col-5 p-0">
+        <div className="col-5 p-0 container-mini">
           <div className="card cards">
             <div className="card-title mt-2 btn d-flex justify-content-lg-start">
-              <a className="links" href="index.html">
+              <Link to={`home`} className="links">
                 <svg
+                  
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
@@ -22,8 +24,8 @@ const Login = () => {
                     fill="#ffb019"
                   />
                 </svg>
-                <span className="mt-1">Return Home</span>
-              </a>
+                <span className="mt-1"> Return Home</span>
+              </Link>
             </div>
             <div className="card-body">
               <h1 className="title">LOGIN</h1>
@@ -53,7 +55,7 @@ const Login = () => {
                   <a href="#" className="submit d-flex justify-content-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      // xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink="http://www.w3.org/1999/xlink"
                       width="218"
                       height="70"
                       viewBox="0 0 218 70"
@@ -127,10 +129,11 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <div className="col-7 p-0 m-0">
-          <img src="images/auth.svg" className="img-fluid img" alt="..." />
+        <div className="col-7 p-0 m-0 container-mini">
+          <img src="auth.svg" className="img-fluid img" alt="..." />
         </div>
       </div>
+    </div>
     </div>
   );
 };
