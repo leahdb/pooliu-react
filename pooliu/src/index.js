@@ -6,16 +6,12 @@ import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Screens/Home";
 import Navigation from "./Components/Navigation";
-<<<<<<< HEAD
 import Login from './Screens/Login';
 import PickRide from './Screens/PickRide';
-=======
 import RideAccordion from "./Components/Accordion";
-import Login from "./Screens/Login";
 import Register from "./Screens/Register";
 import Verify from "./Screens/Verify";
 import AllRides from "./Screens/AllRides";
->>>>>>> faccd697ba70dd0f7e2261fe82622d742622c622
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,15 +27,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/home",
-<<<<<<< HEAD
     element: <Home/>
   },
   {
     path:"/pickride",
     element:<PickRide/>
-  }
-=======
-    element: <Home />,
   },
   {
     path: "/ride",
@@ -57,7 +49,6 @@ const router = createBrowserRouter([
     path: "/all-rides",
     element: <AllRides />,
   },
->>>>>>> faccd697ba70dd0f7e2261fe82622d742622c622
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
