@@ -9,7 +9,7 @@ const HomeNavigation = () => {
           <img src="logo.svg" alt="logo" />
         </Link>
         <div className="d-flex">
-          <Link to={`nav`} className="pe-3">
+          <Link to={`login`} className="pe-3">
             <svg
               id="Component_1_1"
               data-name="Component 1 – 1"
