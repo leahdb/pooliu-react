@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 import "./index.scss";
 //import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Screens/Home"
+import Home from "./Screens/Home";
 import Navigation from "./Components/Navigation";
-import Login from './Screens/Login';
+import RideAccordion from "./Components/Accordion";
+import Login from "./Screens/Login";
 import Register from "./Screens/Register";
 import Verify from "./Screens/Verify";
+import AllRides from "./Screens/AllRides";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,12 +29,20 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
+    path: "/ride",
+    element: <RideAccordion></RideAccordion>,
+  },
+  {
     path: "/register",
     element: <Register />,
   },
   {
     path: "/verify",
     element: <Verify />,
+  },
+  {
+    path: "/all-rides",
+    element: <AllRides />,
   },
 ]);
 
@@ -41,5 +51,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-

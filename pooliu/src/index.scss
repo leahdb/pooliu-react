@@ -9,6 +9,7 @@ $white: white;
 $light-gray: rgba(160, 160, 160, 0.2);
 $dark-grey: #a0a0a0;
 $blue-grey: #ECF0F3;
+$light-blue-gray: #E8ECF1;
 
 * {
   font-family: $font;
@@ -443,6 +444,117 @@ $blue-grey: #ECF0F3;
   
 
 }
+
+.rides {
+  
+  .accordion-item{
+    border-top: $dark-blue solid 3px;
+    border-left: $dark-blue solid 3px;
+    border-right: $dark-blue solid 3px;
+
+    .accordion-button{
+      color: $dark-blue;
+      font-size: 24px;
+      font-weight: 700;
+      background-color: $light-blue-gray;
+    }
+
+    .accordion-button::after{
+      background-image: url("../public/arrow-down-1.svg");
+    }
+
+    .accordion-body{
+      .ride{
+        border: $dark-blue solid 1px;
+        border-radius: 7px;
+        .profile-pic {
+          height: 65px;
+          border-radius: 50%;
+        }
+
+        .details{
+          color: $dark-blue;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .name{
+          color: $dark-blue;
+          font-size: 22px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    
+  }
+
+  .last-item{
+    border-bottom: $dark-blue solid 3px;
+    
+  }
+
+
+  
+}
+
+.all-rides{
+
+  h1{
+    text-align: center;
+    color: $dark-blue;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .rides{
+    a{
+      svg{
+        width: 133px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rides{
+    a{
+      svg{
+        width: 112px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rides{
+    .profile-pic {
+      height: 55px !important;
+    }
+    .details{
+      font-size: 10px !important;
+      font-weight: bold !important;
+    }
+
+    .name{
+      color: $dark-blue;
+      font-size: 18px !important;
+      font-weight: bold !important;
+    }
+    a{
+      svg{
+        width: 96px;
+        height: 26px;
+      }
+    }
+  }
+}
+
 .login-page{
   background-color: $dark-blue;
   .container1{
