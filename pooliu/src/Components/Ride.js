@@ -14,8 +14,11 @@ const Ride = () => {
               <div className="col-12 col-lg-6">
                 <h3 className="name">lorem ipsum</h3>
                 <Rating
-                  emptySymbol={<img src="empty-wheel.svg" className="icon"/>}
+                  initialRating={4}
+                  readonly
+                  emptySymbol={<img src="empty-wheel.svg" className="icon" />}
                   fullSymbol={<img src="full-wheel.svg" className="icon" />}
+                  //fractions={2}
                 />
               </div>
               <div className="col-12 col-lg-6">
@@ -25,6 +28,7 @@ const Ride = () => {
                     width="11.4"
                     height="14.462"
                     viewBox="0 0 11.4 14.462"
+                    className="me-1"
                   >
                     <g id="location" transform="translate(-0.039 -0.039)">
                       <path
@@ -61,6 +65,7 @@ const Ride = () => {
                     width="13"
                     height="13"
                     viewBox="0 0 13 13"
+                    className="me-1"
                   >
                     <path
                       id="date_1_"
@@ -79,6 +84,7 @@ const Ride = () => {
                     width="13.3"
                     height="13.3"
                     viewBox="0 0 13.3 13.3"
+                    className="me-1"
                   >
                     <path
                       id="time"

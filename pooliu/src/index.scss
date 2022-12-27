@@ -498,6 +498,17 @@ $light-blue-gray: #E8ECF1;
   
 }
 
+.all-rides{
+
+  h1{
+    text-align: center;
+    color: $dark-blue;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   .rides{
     a{
