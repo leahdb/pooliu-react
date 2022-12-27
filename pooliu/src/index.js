@@ -8,6 +8,8 @@ import Home from "./Screens/Home"
 import Navigation from "./Components/Navigation";
 import RideAccordion from "./Components/RideAccordion";
 import Login from './Screens/Login';
+import Register from "./Screens/Register";
+import Verify from "./Screens/Verify";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
   {
     path: "/ride",
     element: <RideAccordion></RideAccordion>,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/verify",
+    element: <Verify />,
   },
 ]);
 
