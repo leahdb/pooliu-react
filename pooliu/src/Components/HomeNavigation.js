@@ -5,7 +5,7 @@ const HomeNavigation = () => {
   return (
     <nav className="navbar p-0">
       <div className="container">
-        <Link to={`nav`} className="navbar-brand">
+        <Link to={`pickride`} className="navbar-brand">
           <img src="logo.svg" alt="logo" />
         </Link>
         <div className="d-flex">

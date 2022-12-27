@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Screens/Home"
 import Navigation from "./Components/Navigation";
 import Login from './Screens/Login';
+import PickRide from './Screens/PickRide';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home/>
+  },
+  {
+    path:"/pickride",
+    element:<PickRide/>
   }
 ]);
 
