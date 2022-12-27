@@ -143,24 +143,9 @@ const PickRide = () => {
                   <p className="text-buttom-left">Available Trips</p>
                 </div>
                 <div className="col-6 d-flex justify-content-end">
-                  <button onClick={``}>
-                    <svg
-                      className="border-0"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="31"
-                      height="28.998"
-                      viewBox="0 0 31 28.998"
-                    >
-                      <path
-                        id="filter"
-                        d="M2,7h.142A3.981,3.981,0,0,0,9.858,7H30a1,1,0,0,0,0-2H9.858A3.981,3.981,0,0,0,2.142,5H2A1,1,0,0,0,2,7ZM6,4A2,2,0,1,1,4,6,2,2,0,0,1,6,4ZM30,15h-.142a3.981,3.981,0,0,0-7.716,0H2a1,1,0,0,0,0,2H22.142a3.981,3.981,0,0,0,7.716,0H30a1,1,0,0,0,0-2Zm-4,3a2,2,0,1,1,2-2A2,2,0,0,1,26,18Zm4,7H19.858a3.981,3.981,0,0,0-7.716,0H2a1,1,0,0,0,0,2H12.142a3.981,3.981,0,0,0,7.716,0H30a1,1,0,0,0,0-2ZM16,28a2,2,0,1,1,2-2A2,2,0,0,1,16,28Z"
-                        transform="translate(-0.5 -1.501)"
-                        fill="#143d6d"
-                        stroke="#143d6d"
-                        stroke-width="1"
-                      />
-                    </svg>
-                  </button>
+                  <Link to="">
+                    <img src="filter.svg" alt="" />
+                  </Link>
                 </div>
               </div>
             </div>

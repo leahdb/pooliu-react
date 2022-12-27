@@ -1,12 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Login = () => {
+const Register = () => {
   return (
-<<<<<<< HEAD
-    <div className="login-page mt-3">
-=======
     <div className="auth-pages d-flex align-items-center">
->>>>>>> faccd697ba70dd0f7e2261fe82622d742622c622
       <div className="container">
         <div className="row">
           <div className="col-5 p-0 container-mini">
@@ -31,13 +27,13 @@ const Login = () => {
                 </Link>
               </div>
               <div className="card-body">
-                <h1 className="title">LOGIN</h1>
+                <h1 className="title">CREATE ACCOUNT</h1>
                 <div className="container">
-                  <div className="row inputs mt-4">
+                  <div className="row inputs">
                     <div className="col-12 d-flex justify-content-center">
                       <input
                         type="password"
-                        className="form-control my-5"
+                        className="form-control mt-5"
                         id="inputID"
                         placeholder="ID"
                       />
@@ -45,23 +41,31 @@ const Login = () => {
                     <div className="col-12 d-flex justify-content-center">
                       <input
                         type="password"
-                        className="form-control"
+                        className="form-control mt-4"
                         id="password"
                         placeholder="PASSWORD"
                       />
                     </div>
-                    <div className="col-12 d-flex justify-content-end mt-2">
-                      <a href="#" className="link m-0 link mt-2">
-                        Forgot password?
-                      </a>
+                    <div className="col-12 d-flex justify-content-center">
+                      <input
+                        type="password"
+                        className="form-control mt-4"
+                        id="passwordCon"
+                        placeholder="CONFIRM PASSWORD"
+                      />
+                    </div>
+                    <div className="col-12 d-flex justify-content-center mt-4">
+                      <input type="radio" id="liu" name="isLIU" value="1" />
+                      <label for="liu">LIU</label>
+                      <input type="radio" id="biu" name="isLIU" value="0" />
+                      <label for="biu">BIU</label>
                     </div>
                     <a
-                      href="#"
+                      href="verify.html"
                       className="submit d-flex justify-content-center"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        xlink="http://www.w3.org/1999/xlink"
                         width="218"
                         height="70"
                         viewBox="0 0 218 70"
@@ -86,8 +90,8 @@ const Login = () => {
                           </filter>
                         </defs>
                         <g
-                          id="Group_105"
-                          data-name="Group 105"
+                          id="Group_104"
+                          data-name="Group 104"
                           transform="translate(-254 -515)"
                         >
                           <g
@@ -105,8 +109,7 @@ const Login = () => {
                             />
                           </g>
                           <text
-                            id="LET_S_GO"
-                            data-name="LET'S GO"
+                            id="REGISTER"
                             transform="translate(322 555)"
                             fill="#ffb019"
                             font-size="20"
@@ -115,18 +118,18 @@ const Login = () => {
                             letter-spacing="-0.007em"
                           >
                             <tspan x="0" y="0">
-                              LET&apos;S GO
+                              REGISTER
                             </tspan>
                           </text>
                         </g>
                       </svg>
                     </a>
                     <p className="d-flex justify-content-start mt-3">
-                      Don't have an account? &nbsp;
+                      Already have an account? &nbsp;
                       <span>
-                        <a href="register.html" className="link">
+                        <a href="login.html" className="link">
                           {" "}
-                          Sign Up
+                          Login
                         </a>
                       </span>
                     </p>
@@ -144,4 +147,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
