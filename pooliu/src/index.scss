@@ -292,7 +292,7 @@ $light-blue-gray: #E8ECF1;
     }
     .singleIn {
       width: 70px;
-      height: 60px;
+      height: 70px;
       background-color: $light-gray;
       border: 0;
     }
@@ -808,3 +808,31 @@ $light-blue-gray: #E8ECF1;
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .auth-pages{
+    .singleIn{
+      margin: 5px;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .auth-pages{
+    .singleIn{
+      //margin: 5px;
+      margin-left: -15px;
+      box-sizing: border-box !important; 
+      width: 60px !important;
+      height: 60px !important ;
+    }
+    .input-row-small{
+      margin: 0;
+      float: left;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .auth-pages{
+  .input-verify{
+    width: 100% !important;
+  }}
+}

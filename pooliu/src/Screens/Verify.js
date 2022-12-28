@@ -4,10 +4,10 @@ const Verify = () => {
   return (
     <div className="auth-pages d-flex align-items-center">
       <div className="container">
-        <div className="row">
-          <div className="col-5 p-0 container-mini">
+        <div className="row d-flex justify-content-center">
+          <div className="col-5 p-0 container-mini container-mini-left">
             <div className="card cards">
-              <div className="card-title mt-2 btn d-flex justify-content-lg-start">
+              <div className="card-title mt-2 btn d-flex justify-content-sm-start">
                 <Link to={`home`} className="links">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const Verify = () => {
                   </div>
                   <div className="row mt-5 mb-5"></div>
                   <div className="row justify-content-center mt-5 mb-5">
-                    <div className="col-2">
+                    <div className="col-3 col-xl-2">
                       <input
                         type="text"
                         className="form-control singleIn"
@@ -51,7 +51,7 @@ const Verify = () => {
                         placeholder=""
                       />
                     </div>
-                    <div className="col-2">
+                    <div className="col-3 col-xl-2">
                       <input
                         type="text"
                         className="form-control singleIn"
@@ -59,7 +59,7 @@ const Verify = () => {
                         placeholder=""
                       />
                     </div>
-                    <div className="col-2">
+                    <div className="col-3 col-xl-2">
                       <input
                         type="text"
                         className="form-control singleIn"
@@ -67,7 +67,7 @@ const Verify = () => {
                         placeholder=""
                       />
                     </div>
-                    <div className="col-2">
+                    <div className="col-3 col-xl-2">
                       <input
                         type="text"
                         className="form-control singleIn"
@@ -152,7 +152,7 @@ const Verify = () => {
               </div>
             </div>
           </div>
-          <div className="col-7 p-0 m-0 container-mini">
+          <div className="col-7 p-0 m-0 container-mini container-mini-right">
             <img src="auth.svg" className="img-fluid img" alt="..." />
           </div>
         </div>
