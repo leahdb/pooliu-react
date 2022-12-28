@@ -196,8 +196,8 @@ $light-blue-gray: #E8ECF1;
 
   .img {
     border-radius: 0px 30px 30px 0px;
-    width: 100%;
-    height: inherit;
+    width: max-content;
+    height: max-content;
   }
 
   .cards {
@@ -952,5 +952,39 @@ $light-blue-gray: #E8ECF1;
   .svg-filter{
     border: 2em;
     background-color: #ECF0F3;
+  }
+}
+//responsiveness for login page
+@media screen and (max-width: 1400px) {
+  .auth-pages{
+    .container-mini-right{
+      background-image: url('../public/auth.svg');
+      background-size: cover;
+      border-radius: 0px 30px 30px 0px;
+    }
+    // .container-mini-left{
+    //   //width: 100%;
+      
+    // }
+    .cards{
+      border-radius: 30px 0px 0px 30px;
+    }
+    .img{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .auth-pages{
+    .container-mini-right{
+      display: none;
+    }
+    .container-mini-left{
+      width: 80%;
+      
+    }
+    .cards{
+      border-radius: 30px 30px 30px 30px;
+    }
   }
 }

@@ -29,7 +29,9 @@ const Verify = () => {
               <div className="card-body">
                 <div className="container">
                   <div className="row">
-                    <h1 className="verHead">A verification code was sent to:</h1>
+                    <h1 className="verHead">
+                      A verification code was sent to:
+                    </h1>
                   </div>
                   <div className="row">
                     <h1 className="verEmail">xxxxxxxx@students.liu.edu.lb</h1>
@@ -76,7 +78,10 @@ const Verify = () => {
                   </div>
                   <div className="row mt-5 mb-5"></div>
                 </div>
-                <a href="login.html" className="d-flex justify-content-center mt-5">
+                <a
+                  href="login.html"
+                  className="d-flex justify-content-center mt-5"
+                >
                   <svg
                     className="svg"
                     xmlns="http://www.w3.org/2000/svg"
