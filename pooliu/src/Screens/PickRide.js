@@ -130,7 +130,7 @@ const PickRide = () => {
             </div>
           </div>
         </div>
-        {/* <div className="row">
+        <div className="row">
           <div className="col-5 d-flex justify-content-start">
             <div className="container">
               <div className="row">
@@ -139,7 +139,7 @@ const PickRide = () => {
                 </div>
                 <div className="col-6 d-flex justify-content-end">
                   <Link to="">
-                    <img src="filter.svg" alt="" />
+                    <img src="filter.svg" alt=""/>
                   </Link>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const PickRide = () => {
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
