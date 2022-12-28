@@ -6,13 +6,12 @@ const Navigation = () => {
     <nav className="nav p-0">
         <div className="container">
         <div className="row d-flex justify-content-between align-items-center">
-            <div className="col-md-3 col-5 pt-3">
+            <div className="col-md-3 col-8 pt-3">
             <Link className="navbar-brand" to='/'>
-                <img src="logo-2.svg" alt="logo"/>
+                <img className="logo" src="logo-2.svg" alt="logo"/>
             </Link>
             </div>
-            <div
-            className="col-2 col-lg-1 dropdown-toggle drop"
+            <div className="col-3 col-sm-2 col-lg-1 dropdown-toggle drop"
             id="dropdownMenuButton2"
             data-bs-toggle="dropdown"
             aria-expanded="false"
