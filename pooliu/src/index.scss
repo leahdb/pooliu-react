@@ -226,13 +226,30 @@ $light-blue-gray: #E8ECF1;
 
     .inputs {
       width: 70%;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
       input {
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-bottom: solid $dark-blue 2px;
-        font-weight: 500;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-bottom: solid $dark-blue 2px;
+      font-weight: 500;
+      border-radius: 0;
+      }
+    }
+
+    .text{
+        margin-top: 30px;
+    }
+
+    .emails{
+      size: 16px;
+      font-weight: 500;
+      color: $dark-blue;
+
+      .email{
+          margin-left: 12px;
       }
     }
 
@@ -667,6 +684,29 @@ $light-blue-gray: #E8ECF1;
   }
 }
 
+
+//responsiveness
+
+@media screen and (max-width: 1400px) {
+  .auth-pages{
+    .container-mini-right{
+      background-image: url('../public/auth.svg');
+      background-size: cover;
+      border-radius: 0px 30px 30px 0px;
+    }
+    // .container-mini-left{
+    //   //width: 100%;
+      
+    // }
+    .cards{
+      border-radius: 30px 0px 0px 30px;
+    }
+    .img{
+      display: none;
+    }
+  }
+}
+
 @media screen and (min-width: 992px){
   .pick-container{
     display: flex !important;
@@ -680,6 +720,19 @@ $light-blue-gray: #E8ECF1;
   .arrow{
     transform: rotate(90deg);
     margin-bottom: -100px;
+  }
+
+  .auth-pages{
+    .container-mini-right{
+      display: none;
+    }
+    .container-mini-left{
+      width: 80%;
+      
+    }
+    .cards{
+      border-radius: 30px 30px 30px 30px;
+    }
   }
 }
 
@@ -755,236 +808,3 @@ $light-blue-gray: #E8ECF1;
   }
 }
 
-.login-page{
-  background-color: $dark-blue;
-  .container1{
-    background-color: $dark-blue;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  //   background-color: $dark-blue;
-  //   height: 100vh;
-  //   width: 100vw;
-  
-  
-  .img {
-  border-radius: 0px 30px 30px 0px;
-  width: 100%;
-  height: inherit;
-  }
-  
-  .cards {
-  border: 0;
-  border-radius: 30px 0px 0px 30px;
-  height: 100%;
-  
-  .link {
-      color: $yellow;
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: none;
-  }
-  
-  .link:hover {
-      color: $dark-blue;
-  }
-  
-  .title {
-      margin-top: 20px;
-      font-size: 32px;
-      color: $dark-blue;
-      font-weight: bold;
-      text-align: center;
-  }
-  
-  .inputs {
-      width: 70%;
-      margin: auto;
-      input {
-      border-top: 0px;
-      border-left: 0px;
-      border-right: 0px;
-      border-bottom: solid $dark-blue 2px;
-      font-weight: 500;
-      border-radius: 0;
-      }
-  }
-  
-  .links {
-      text-decoration: none;
-      color: $yellow;
-      font-size: 18px;
-      font-weight: bold;
-  }
-  
-  .submit {
-      margin-top: 70px;
-  }
-  
-  p {
-      color: $dark-blue;
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: none;
-  }
-  
-  .verEmail {
-      color: $dark-blue;
-      font-weight: bold;
-      font-size: 18px;
-  }
-  .verHead {
-      color: $dark-grey;
-      font-weight: 500;
-      font-size: 20px;
-  }
-  .verEdit {
-      color: $yellow;
-      font-weight: bold;
-      font-size: 18px;
-      text-decoration: none;
-  }
-  .verEdit:hover {
-      color: $dark-blue;
-  }
-  .singleIn {
-      width: 70px;
-      height: 60px;
-      background-color: $light-gray;
-      border: 0;
-  }
-  .container-mini{
-    height: 80%;
-    width: inherit;
-  } 
-  }
-}
-.pickride-page{
-  * {
-    font-family: $font;
-  }
-  
-  .nav {
-    background-color: $blue-grey;
-    .profile-pic {
-      height: 50px;
-      border-radius: 50%;
-    }
-    .drop {
-      a {
-        text-decoration: none;
-        font-weight: 500;
-        color: $dark-blue;
-      }
-    }
-  }
-  .title {
-    color: $darker-blue;
-    font-size: 38px;
-    font-family: $font;
-    font-weight: bolder;
-  }
-  .location-btn {
-    width: 100%;
-    font-weight: 500;
-    color: $dark-blue;
-    font-size: 20px;
-    border: solid $dark-blue 2px;
-  }
-  .select {
-    //width: 300px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: solid $dark-blue 2px;
-    border-radius: 0;
-    font-weight: 500;
-    color: $dark-blue;
-    font-size: 20px;
-  }
-  
-  .dropdown {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: solid $dark-blue 2px;
-  }
-  
-  .location-btn {
-    width: 100%;
-    font-weight: 500;
-    color: $dark-blue;
-    font-size: 20px;
-    border: solid $dark-blue 2px;
-  }
-  
-  .seat-label {
-    color: $dark-blue;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: white;
-    border: solid $dark-blue 2px;
-  }
-  
-  .number {
-    text-align: center;
-    border: solid $dark-blue 2px;
-  }
-  .add {
-    width: 40px;
-    font-weight: bold;
-    color: $yellow;
-    background-color: $dark-blue;
-    border: solid $dark-blue 2px;
-  }
-  .btn-pick {
-    background-color: $dark-blue;
-    padding: 0%;
-  }
-  .svgSpin {
-    transform: rotate(180deg);
-  }
-  .text-buttom-left{
-    font-weight: bold;
-    color: $dark-blue;
-  }
-  .svg-filter{
-    border: 2em;
-    background-color: #ECF0F3;
-  }
-}
-//responsiveness for login page
-@media screen and (max-width: 1400px) {
-  .auth-pages{
-    .container-mini-right{
-      background-image: url('../public/auth.svg');
-      background-size: cover;
-      border-radius: 0px 30px 30px 0px;
-    }
-    // .container-mini-left{
-    //   //width: 100%;
-      
-    // }
-    .cards{
-      border-radius: 30px 0px 0px 30px;
-    }
-    .img{
-      display: none;
-    }
-  }
-}
-@media screen and (max-width: 992px) {
-  .auth-pages{
-    .container-mini-right{
-      display: none;
-    }
-    .container-mini-left{
-      width: 80%;
-      
-    }
-    .cards{
-      border-radius: 30px 30px 30px 30px;
-    }
-  }
-}

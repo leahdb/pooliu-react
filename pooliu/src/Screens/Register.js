@@ -33,7 +33,7 @@ const Register = () => {
                     <div className="col-12 d-flex justify-content-center">
                       <input
                         type="password"
-                        className="form-control mt-5"
+                        className="form-control text"
                         id="inputID"
                         placeholder="ID"
                       />
@@ -41,7 +41,7 @@ const Register = () => {
                     <div className="col-12 d-flex justify-content-center">
                       <input
                         type="password"
-                        className="form-control mt-4"
+                        className="form-control text"
                         id="password"
                         placeholder="PASSWORD"
                       />
@@ -49,16 +49,21 @@ const Register = () => {
                     <div className="col-12 d-flex justify-content-center">
                       <input
                         type="password"
-                        className="form-control mt-4"
+                        className="form-control text"
                         id="passwordCon"
                         placeholder="CONFIRM PASSWORD"
                       />
                     </div>
-                    <div className="col-12 d-flex justify-content-center mt-4">
-                      <input type="radio" id="liu" name="isLIU" value="1" />
-                      <label for="liu">LIU</label>
-                      <input type="radio" id="biu" name="isLIU" value="0" />
-                      <label for="biu">BIU</label>
+                    <div className="col-10 d-flex justify-content-between mt-5 emails">
+                      <label className="email">EMAIL:</label>
+                      <div>
+                        <input type="radio" id="liu" name="isLIU" value="1" />
+                        <label for="liu">LIU</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="biu" name="isLIU" value="0" />
+                        <label for="biu">BIU</label>
+                      </div>
                     </div>
                     <a
                       href="verify.html"
@@ -127,7 +132,7 @@ const Register = () => {
                     <p className="d-flex justify-content-start mt-3">
                       Already have an account? &nbsp;
                       <span>
-                        <a href="login.html" className="link">
+                        <a routerLink="/Login" className="link">
                           {" "}
                           Login
                         </a>
