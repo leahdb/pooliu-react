@@ -4,8 +4,8 @@ const Login = () => {
   return (
     <div className="auth-pages d-flex align-items-center">
       <div className="container">
-        <div className="row">
-          <div className="col-5 p-0 container-mini">
+        <div className="row  d-flex justify-content-center">
+          <div className="col-5 p-0 container-mini container-mini-left">
             <div className="card cards">
               <div className="card-title mt-2 btn d-flex justify-content-lg-start">
                 <Link to={`home`} className="links">
@@ -131,7 +131,7 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <div className="col-7 p-0 m-0 container-mini">
+          <div className="col-7 p-0 m-0 container-mini container-mini-right">
             <img src="auth.svg" className="img-fluid img" alt="..." />
           </div>
         </div>
