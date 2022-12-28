@@ -2,11 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
-<<<<<<< HEAD
-    <div className="login-page mt-3">
-=======
     <div className="auth-pages d-flex align-items-center">
->>>>>>> faccd697ba70dd0f7e2261fe82622d742622c622
       <div className="container">
         <div className="row">
           <div className="col-5 p-0 container-mini">

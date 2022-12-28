@@ -12,6 +12,7 @@ import RideAccordion from "./Components/Accordion";
 import Register from "./Screens/Register";
 import Verify from "./Screens/Verify";
 import AllRides from "./Screens/AllRides";
+import CreateTrip from "./Screens/CreateTrip";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,11 +28,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/home",
-    element: <Home/>
+    element: <Home />,
   },
   {
-    path:"/pickride",
-    element:<PickRide/>
+    path: "/pick-ride",
+    element: <PickRide />,
   },
   {
     path: "/ride",
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/all-rides",
     element: <AllRides />,
+  },
+  {
+    path: "/create-trip",
+    element: <CreateTrip />,
   },
 ]);
 
