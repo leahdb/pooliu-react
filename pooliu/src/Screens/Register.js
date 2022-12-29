@@ -4,8 +4,8 @@ const Register = () => {
   return (
     <div className="auth-pages d-flex align-items-center">
       <div className="container">
-        <div className="row">
-          <div className="col-5 p-0 container-mini">
+        <div className="row d-flex justify-content-center">
+          <div className="col-5 p-0 container-mini container-mini-left">
             <div className="card cards">
               <div className="card-title mt-2 btn d-flex justify-content-lg-start">
                 <Link to={`home`} className="links">
@@ -27,10 +27,10 @@ const Register = () => {
                 </Link>
               </div>
               <div className="card-body">
-                <h1 className="title">CREATE ACCOUNT</h1>
-                <div className="container">
-                  <div className="row inputs">
-                    <div className="col-12 d-flex justify-content-center">
+                <h1 className="title">REGISTER</h1>
+                <div className="container ">
+                  <div className="row inputs input-verify">
+                    <div className="col-12 d-flex justify-content-center ">
                       <input
                         type="password"
                         className="form-control text"
@@ -71,6 +71,7 @@ const Register = () => {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
+                        xlink="http://www.w3.org/1999/xlink"
                         width="218"
                         height="70"
                         viewBox="0 0 218 70"
@@ -95,12 +96,12 @@ const Register = () => {
                           </filter>
                         </defs>
                         <g
-                          id="Group_104"
-                          data-name="Group 104"
-                          transform="translate(-254 -515)"
+                          id="Group_13"
+                          data-name="Group 13"
+                          transform="translate(-112 -521)"
                         >
                           <g
-                            transform="matrix(1, 0, 0, 1, 254, 515)"
+                            transform="matrix(1, 0, 0, 1, 112, 521)"
                             filter="url(#Rectangle_11)"
                           >
                             <rect
@@ -114,8 +115,9 @@ const Register = () => {
                             />
                           </g>
                           <text
-                            id="REGISTER"
-                            transform="translate(322 555)"
+                            id="CREATE_ACCOUNT"
+                            data-name="CREATE ACCOUNT"
+                            transform="translate(137 563)"
                             fill="#ffb019"
                             fontSize="20"
                             fontFamily="SegoeUI-Bold, Segoe UI"
@@ -123,7 +125,7 @@ const Register = () => {
                             letterSpacing="-0.007em"
                           >
                             <tspan x="0" y="0">
-                              REGISTER
+                              CREATE ACCOUNT
                             </tspan>
                           </text>
                         </g>
@@ -143,7 +145,7 @@ const Register = () => {
               </div>
             </div>
           </div>
-          <div className="col-7 p-0 m-0 container-mini">
+          <div className="col-7 p-0 m-0 container-mini container-mini-right">
             <img src="auth.svg" className="img-fluid img" alt="..." />
           </div>
         </div>

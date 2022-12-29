@@ -29,19 +29,19 @@ const Login = () => {
               <div className="card-body">
                 <h1 className="title">LOGIN</h1>
                 <div className="container">
-                  <div className="row inputs mt-4">
-                    <div className="col-12 d-flex justify-content-center">
+                  <div className="row inputs mt-4 input-verify">
+                    <div className="col-12 d-flex justify-content-center ">
                       <input
                         type="password"
-                        className="form-control my-5"
+                        className="form-control my-5 input-verify"
                         id="inputID"
                         placeholder="ID"
                       />
                     </div>
-                    <div className="col-12 d-flex justify-content-center">
+                    <div className="col-12 d-flex justify-content-center input-verify">
                       <input
                         type="password"
-                        className="form-control"
+                        className="form-control "
                         id="password"
                         placeholder="PASSWORD"
                       />
