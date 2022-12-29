@@ -23,10 +23,10 @@ const Footer = () => {
                   transform="translate(0.35 0.35)"
                   fill="none"
                   stroke="#143d6d"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-miterlimit="10"
-                  stroke-width="1.7"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
+                  strokeWidth="1.7"
                 />
               </svg>
             </a>

@@ -1,5 +1,7 @@
 import React from "react";
 import Navigation from "../Components/Navigation";
+import Footer from "../Components/Footer";
+import Calendar from "../Components/Calendar";
 
 const CreateTrip = () => {
   return (
@@ -13,7 +15,7 @@ const CreateTrip = () => {
               <div className="col-5 p-4">
                 <button
                   type="button"
-                  className="btn btn-outline-primary location-btn"
+                  className="btn btn-outline-primary form-btn"
                   data-bs-toggle="modal"
                   data-bs-target="#map-modal"
                 >
@@ -35,10 +37,10 @@ const CreateTrip = () => {
                       transform="translate(1.5 2.536)"
                       fill="none"
                       stroke="#ffb019"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="5"
-                      fill-rule="evenodd"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="5"
+                      fillRule="evenodd"
                     />
                   </svg>
                 </a>
@@ -48,7 +50,7 @@ const CreateTrip = () => {
                   className="form-select"
                   aria-label="Default select example"
                 >
-                  <option selected>CAMPUS SITE</option>
+                  <option defaultValue>CAMPUS SITE</option>
                   <option value="1">BEIRUT</option>
                   <option value="2">BEKAA</option>
                   <option value="3">HALBA</option>
@@ -63,7 +65,7 @@ const CreateTrip = () => {
               <div className="col-6 p-4">
                 <button
                   type="button"
-                  className="btn btn-outline-primary location-btn"
+                  className="btn btn-outline-primary form-btn"
                 >
                   SELECT DATE AND TIME
                 </button>
@@ -71,7 +73,7 @@ const CreateTrip = () => {
               <div className="col-6 p-4">
                 <button
                   type="button"
-                  className="btn btn-outline-primary location-btn"
+                  className="btn btn-outline-primary form-btn"
                 >
                   SELECT RIDE TYPE
                 </button>
@@ -97,7 +99,7 @@ const CreateTrip = () => {
                         transform="translate(0 2.25)"
                         fill="none"
                         stroke="#ffb019"
-                        stroke-width="4.5"
+                        strokeWidth="4.5"
                       />
                     </svg>
                   </button>
@@ -127,7 +129,7 @@ const CreateTrip = () => {
                           transform="translate(500 656)"
                           fill="none"
                           stroke="#ffb019"
-                          stroke-width="4.5"
+                          strokeWidth="4.5"
                         />
                         <line
                           id="minus-2"
@@ -136,7 +138,7 @@ const CreateTrip = () => {
                           transform="translate(511 645) rotate(90)"
                           fill="none"
                           stroke="#ffb019"
-                          stroke-width="4.5"
+                          strokeWidth="4.5"
                         />
                       </g>
                     </svg>
@@ -164,7 +166,7 @@ const CreateTrip = () => {
                   >
                     <feOffset dx="-1" dy="2" input="SourceAlpha" />
                     <feGaussianBlur stdDeviation="3" result="blur" />
-                    <feFlood flood-color="#143d6d" flood-opacity="0.502" />
+                    <feFlood floodColor="#143d6d" floodOpacity="0.502" />
                     <feComposite operator="in" in2="blur" />
                     <feComposite in="SourceGraphic" />
                   </filter>
@@ -192,9 +194,9 @@ const CreateTrip = () => {
                     id="CREATE"
                     transform="translate(1064 606)"
                     fill="#ffb019"
-                    font-size="18"
-                    font-family="SegoeUI-Bold, Segoe UI"
-                    font-weight="700"
+                    fontSize="18"
+                    fontFamily="SegoeUI-Bold, Segoe UI"
+                    fontWeight="700"
                   >
                     <tspan x="0" y="0">
                       CREATE
@@ -207,7 +209,7 @@ const CreateTrip = () => {
           <div
             className="modal fade"
             id="map-modal"
-            tabindex="-1"
+            tabIndex="-1"
             aria-labelledby="map-modal"
             aria-hidden="true"
           >
@@ -228,7 +230,7 @@ const CreateTrip = () => {
                   <a className="skiplink" href="#map">
                     Go to map
                   </a>
-                  <div id="map" className="map" tabindex="0"></div>
+                  <div id="map" className="map" tabIndex="0"></div>
                   <button id="zoom-out">Zoom out</button>
                   <button id="zoom-in">Zoom in</button>
                 </div>
@@ -249,6 +251,8 @@ const CreateTrip = () => {
           </div>
         </main>
       </div>
+      <Calendar />
+      <Footer />
     </>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "../Components/Navigation";
 import Driver from "../Components/Driver";
 import Footer from "../Components/Footer";
+import Calendar from "../Components/Calendar";
 import { Link } from "react-router-dom";
 
 const PickRide = () => {
@@ -15,7 +16,7 @@ const PickRide = () => {
             <div className="col-9 col-lg-5 p-lg-4 py-4 px-3">
               <button
                 type="button"
-                className="btn btn-outline-primary location-btn"
+                className="btn btn-outline-primary form-btn"
                 data-bs-toggle="modal"
                 data-bs-target="#map-modal"
               >
@@ -38,10 +39,10 @@ const PickRide = () => {
                     transform="translate(1.5 2.536)"
                     fill="none"
                     stroke="#ffb019"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="5"
-                    fill-rule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="5"
+                    fillRule="evenodd"
                   />
                 </svg>
               </a>
@@ -51,22 +52,25 @@ const PickRide = () => {
                 className="form-select"
                 aria-label="Default select example"
               >
-                <option selected>CAMPUS SITE</option>
-                <option value="1">BEIRUT</option>
-                <option value="2">BEKAA</option>
-                <option value="3">HALBA</option>
-                <option value="4">MOUNT LEBANON</option>
-                <option value="5">NABATIEH</option>
-                <option value="6">RAYAK</option>
-                <option value="7">SAIDA</option>
-                <option value="8">TRIPOLI</option>
-                <option value="9">TYRE</option>
+                <option value="1" defaultValue>
+                  BEIRUT CAMPUS
+                </option>
+                <option value="2">BEKAA CAMPUS</option>
+                <option value="3">HALBA CAMPUS</option>
+                <option value="4">MOUNT LEBANON CAMPUS</option>
+                <option value="5">NABATIEH CAMPUS</option>
+                <option value="6">RAYAK CAMPUS</option>
+                <option value="7">SAIDA CAMPUS</option>
+                <option value="8">TRIPOLI CAMPUS</option>
+                <option value="9">TYRE CAMPUS</option>
               </select>
             </div>
             <div className="col-12 col-lg-6 p-lg-4 py-4 px-3">
               <button
                 type="button"
-                className="btn btn-outline-primary location-btn"
+                className="btn btn-outline-primary form-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#calendar-modal"
               >
                 SELECT DATE AND TIME
               </button>
@@ -90,7 +94,7 @@ const PickRide = () => {
                     >
                       <feOffset dx="-1" dy="2" input="SourceAlpha" />
                       <feGaussianBlur stdDeviation="3" result="blur" />
-                      <feFlood flood-color="#143d6d" flood-opacity="0.502" />
+                      <feFlood floodColor="#143d6d" floodOpacity="0.502" />
                       <feComposite operator="in" in2="blur" />
                       <feComposite in="SourceGraphic" />
                     </filter>
@@ -118,9 +122,9 @@ const PickRide = () => {
                       id="PICK"
                       transform="translate(1076 606)"
                       fill="#ffb019"
-                      font-size="18"
-                      font-family="SegoeUI-Bold, Segoe UI"
-                      font-weight="700"
+                      fontSize="18"
+                      fontFamily="SegoeUI-Bold, Segoe UI"
+                      fontWeight="700"
                     >
                       <tspan x="0" y="0">
                         PICK
@@ -151,7 +155,7 @@ const PickRide = () => {
                         transform="translate(-0.5 -1.501)"
                         fill="#143d6d"
                         stroke="#143d6d"
-                        stroke-width="1"
+                        strokeWidth="1"
                       />
                     </svg>
                   </div>
@@ -165,9 +169,9 @@ const PickRide = () => {
                   aria-label="driver pages"
                   className="pagination d-flex justify-content-center pt-2"
                 >
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#">
+                  <ul className="pagination">
+                    <li className="page-item">
+                      <a className="page-link" href="#">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="9.015"
@@ -187,8 +191,8 @@ const PickRide = () => {
                               transform="translate(269.518 736) rotate(40)"
                               fill="none"
                               stroke="#e2e2e2"
-                              stroke-linecap="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeWidth="2"
                             />
                             <line
                               id="Line_15"
@@ -198,30 +202,30 @@ const PickRide = () => {
                               transform="translate(264 742.924) rotate(-40)"
                               fill="none"
                               stroke="#e2e2e2"
-                              stroke-linecap="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeWidth="2"
                             />
                           </g>
                         </svg>
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link active-page" href="#">
+                    <li className="page-item">
+                      <a className="page-link active-page" href="#">
                         1
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
+                    <li className="page-item">
+                      <a className="page-link" href="#">
                         2
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
+                    <li className="page-item">
+                      <a className="page-link" href="#">
                         3
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
+                    <li className="page-item">
+                      <a className="page-link" href="#">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="9.015"
@@ -241,8 +245,8 @@ const PickRide = () => {
                               transform="translate(6 6.576) rotate(140)"
                               fill="none"
                               stroke="#143d6d"
-                              stroke-linecap="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeWidth="2"
                             />
                             <line
                               id="Line_15"
@@ -252,8 +256,8 @@ const PickRide = () => {
                               transform="translate(0.481 13.5) rotate(-140)"
                               fill="none"
                               stroke="#143d6d"
-                              stroke-linecap="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeWidth="2"
                             />
                           </g>
                         </svg>
@@ -267,14 +271,15 @@ const PickRide = () => {
           <div className="col-lg-7 col-12 p-0 d-flex justify-content-center justify-content-lg-end">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14037.036277206962!2d35.4990196537077!3d33.88193514693669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1721587e1d6d%3A0xaa7f5769dc576d98!2sLebanese%20International%20University!5e0!3m2!1sen!2slb!4v1672151492684!5m2!1sen!2slb"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Calendar />
+      <Footer />
     </>
   );
 };

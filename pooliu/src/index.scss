@@ -421,12 +421,17 @@ $light-blue-gray: #E8ECF1;
         border-bottom: solid $dark-blue 2px;
       }
 
-      .location-btn{
+      .form-btn{
         width: 100%;
         font-weight: 500;
         color: $dark-blue;
         font-size: 20px;
         border: solid $dark-blue 2px;
+      }
+
+      .form-btn:hover {
+        color: $white !important;
+        background-color: $dark-blue;
       }
 
       .seat-label{
@@ -569,12 +574,17 @@ $light-blue-gray: #E8ECF1;
       border-bottom: solid $dark-blue 2px;
     }
 
-    .location-btn {
+    .form-btn{
       width: 100%;
       font-weight: 500;
       color: $dark-blue;
       font-size: 20px;
       border: solid $dark-blue 2px;
+    }
+
+    .form-btn:hover {
+      color: $white !important;
+      background-color: $dark-blue;
     }
 
     .pick{

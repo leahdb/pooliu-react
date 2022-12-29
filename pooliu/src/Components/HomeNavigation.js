@@ -12,7 +12,6 @@ const HomeNavigation = () => {
           <Link to={`login`} className="pe-3">
             <svg
               id="Component_1_1"
-              data-name="Component 1 – 1"
               xmlns="http://www.w3.org/2000/svg"
               width="94"
               height="50"
@@ -20,7 +19,6 @@ const HomeNavigation = () => {
             >
               <rect
                 id="Rectangle_5"
-                data-name="Rectangle 5"
                 width="94"
                 height="50"
                 rx="7"
@@ -30,10 +28,10 @@ const HomeNavigation = () => {
                 id="Login"
                 transform="translate(32 31)"
                 fill="#ffb019"
-                font-size="20"
-                font-family="SegoeUI-Bold, Segoe UI"
-                font-weight="700"
-                letter-spacing="-0.007em"
+                fontSize="20"
+                fontFamily="SegoeUI-Bold, Segoe UI"
+                fontWeight="700"
+                letterSpacing="-0.007em"
               >
                 <tspan x="0" y="0">
                   Login
@@ -50,7 +48,7 @@ const HomeNavigation = () => {
                           transform="translate(0 -3)"
                           fill="#ffb019"
                           stroke="#ffb019"
-                          stroke-width="0.5"
+                          strokeWidth="0.5"
                         />
                       </g>
                     </g>
@@ -68,12 +66,10 @@ const HomeNavigation = () => {
             >
               <g
                 id="Group_3"
-                data-name="Group 3"
                 transform="translate(-1121 -20)"
               >
                 <rect
                   id="Rectangle_4"
-                  data-name="Rectangle 4"
                   width="110"
                   height="50"
                   rx="7"
@@ -82,13 +78,12 @@ const HomeNavigation = () => {
                 />
                 <text
                   id="Sign_up"
-                  data-name="Sign up"
                   transform="translate(1150 51)"
                   fill="#103158"
-                  font-size="20"
-                  font-family="SegoeUI-Bold, Segoe UI"
-                  font-weight="700"
-                  letter-spacing="-0.007em"
+                  fontSize="20"
+                  fontFamily="SegoeUI-Bold, Segoe UI"
+                  fontWeight="700"
+                  letterSpacing="-0.007em"
                 >
                   <tspan x="0" y="0">
                     Sign up
@@ -105,7 +100,7 @@ const HomeNavigation = () => {
                             transform="translate(0 -0.7)"
                             fill="#103158"
                             stroke="#103158"
-                            stroke-width="0.5"
+                            strokeWidth="0.5"
                           />
                         </g>
                       </g>

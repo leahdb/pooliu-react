@@ -52,10 +52,10 @@ const Driver = () => {
                       data-name="SEND REQUEST"
                       transform="translate(32 27)"
                       fill="#fff"
-                      font-size="16"
-                      font-family="SegoeUI-Semibold, Segoe UI"
-                      font-weight="600"
-                      letter-spacing="-0.007em"
+                      fontSize="16"
+                      fontFamily="SegoeUI-Semibold, Segoe UI"
+                      fontWeight="600"
+                      letterSpacing="-0.007em"
                     >
                       <tspan x="0" y="0">
                         SEND REQUEST
@@ -68,7 +68,7 @@ const Driver = () => {
                     transform="translate(426.999 331.715)"
                     fill="#fff"
                     stroke="#fff"
-                    stroke-width="0.7"
+                    strokeWidth="0.7"
                   />
                 </g>
               </svg>

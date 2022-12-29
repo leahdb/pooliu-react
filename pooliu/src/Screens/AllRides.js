@@ -23,7 +23,7 @@ const AllRides = () => {
                   transform="translate(-0.5 -1.501)"
                   fill="#143d6d"
                   stroke="#143d6d"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
               </svg>
             </a>

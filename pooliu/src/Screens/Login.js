@@ -74,8 +74,8 @@ const Login = () => {
                             <feOffset dx="-1" dy="2" input="SourceAlpha" />
                             <feGaussianBlur stdDeviation="3" result="blur" />
                             <feFlood
-                              flood-color="#143d6d"
-                              flood-opacity="0.502"
+                              floodColor="#143d6d"
+                              floodOpacity="0.502"
                             />
                             <feComposite operator="in" in2="blur" />
                             <feComposite in="SourceGraphic" />
@@ -105,10 +105,10 @@ const Login = () => {
                             data-name="LET'S GO"
                             transform="translate(322 555)"
                             fill="#ffb019"
-                            font-size="20"
-                            font-family="SegoeUI-Bold, Segoe UI"
-                            font-weight="700"
-                            letter-spacing="-0.007em"
+                            fontSize="20"
+                            fontFamily="SegoeUI-Bold, Segoe UI"
+                            fontWeight="700"
+                            letterSpacing="-0.007em"
                           >
                             <tspan x="0" y="0">
                               LET&apos;S GO
