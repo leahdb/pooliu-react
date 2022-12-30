@@ -733,6 +733,10 @@ $light-blue-gray: #E8ECF1;
   }
 }
 
+.main-page{
+  height: calc(100vh - 186.1px);
+}
+
 
 //responsiveness
 
@@ -797,6 +801,7 @@ $light-blue-gray: #E8ECF1;
       border-radius: 20px 20px 0 0;
     }
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -808,6 +813,10 @@ $light-blue-gray: #E8ECF1;
       }
     }
   }
+
+  .main-page{
+    height: calc(100vh - 215.1px);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -817,6 +826,13 @@ $light-blue-gray: #E8ECF1;
         width: 112px;
         height: 30px;
       }
+    }
+  }
+
+  .main-page{
+    svg{
+      width: 160px;
+      height: 225px;
     }
   }
 }
@@ -908,7 +924,11 @@ $light-blue-gray: #E8ECF1;
 
   .logo{
     width: 100%;
-  }  
+  }
+  
+  .main-page{
+    height: calc(100vh - 230.11px);
+  }
 }
 
 @media screen and (max-width: 1200px) {

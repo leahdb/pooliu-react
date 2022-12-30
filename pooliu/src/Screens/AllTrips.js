@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../Components/Navigation";
 import Accordion from "../Components/Accordion";
+import Footer from "../Components/Footer";
 
 const AllTrips = () => {
   return (
@@ -32,6 +33,7 @@ const AllTrips = () => {
           <Accordion />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
