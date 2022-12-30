@@ -1,5 +1,6 @@
 import React from "react";
 import Ride from "./Ride";
+import Trip from "./Trip";
 
 const Accordion = () => {
   return (
@@ -26,7 +27,8 @@ const Accordion = () => {
                     data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
-                        <Ride></Ride>
+                        <Ride />
+                        <Trip />
                     </div>
                 </div>
                 </div>

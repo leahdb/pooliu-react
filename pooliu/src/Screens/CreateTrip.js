@@ -12,7 +12,7 @@ const CreateTrip = () => {
           <h1 className="title mt-5">CREATE TRIP</h1>
           <div className="container mt-5 main-container">
             <div className="row inputs mt-5">
-              <div className="col-5 p-4">
+              <div className="col-9 col-lg-5 p-lg-4 py-4 px-3">
                 <button
                   type="button"
                   className="btn btn-outline-primary form-btn"
@@ -22,13 +22,14 @@ const CreateTrip = () => {
                   SELECT LOCATION
                 </button>
               </div>
-              <div className="col-2 d-flex justify-content-center p-4">
+              <div className="arrow-container col-3 col-lg-2 d-flex justify-content-center p-lg-4 py-4 px-3 m-lg-0">
                 <a href="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="42.05"
                     height="34.858"
                     viewBox="0 0 42.05 34.858"
+                    className="arrow"
                   >
                     <path
                       id="arrow_1_"
@@ -45,32 +46,35 @@ const CreateTrip = () => {
                   </svg>
                 </a>
               </div>
-              <div className="col-5 p-4">
+              <div className="col-9 col-lg-5 p-lg-4 py-4 px-3">
                 <select
                   className="form-select"
                   aria-label="Default select example"
                 >
-                  <option defaultValue>CAMPUS SITE</option>
-                  <option value="1">BEIRUT</option>
-                  <option value="2">BEKAA</option>
-                  <option value="3">HALBA</option>
-                  <option value="4">MOUNT LEBANON</option>
-                  <option value="5">NABATIEH</option>
-                  <option value="6">RAYAK</option>
-                  <option value="7">SAIDA</option>
-                  <option value="8">TRIPOLI</option>
-                  <option value="9">TYRE</option>
+                  <option value="1" defaultValue>
+                    BEIRUT CAMPUS
+                  </option>
+                  <option value="2">BEKAA CAMPUS</option>
+                  <option value="3">HALBA CAMPUS</option>
+                  <option value="4">MOUNT LEBANON CAMPUS</option>
+                  <option value="5">NABATIEH CAMPUS</option>
+                  <option value="6">RAYAK CAMPUS</option>
+                  <option value="7">SAIDA CAMPUS</option>
+                  <option value="8">TRIPOLI CAMPUS</option>
+                  <option value="9">TYRE CAMPUS</option>
                 </select>
               </div>
-              <div className="col-6 p-4">
+              <div className="col-12 col-lg-6 p-lg-4 py-4 px-3">
                 <button
                   type="button"
                   className="btn btn-outline-primary form-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#calendar-modal"
                 >
                   SELECT DATE AND TIME
                 </button>
               </div>
-              <div className="col-6 p-4">
+              <div className="col-12 col-lg-6 p-lg-4 py-4 px-3">
                 <button
                   type="button"
                   className="btn btn-outline-primary form-btn"
@@ -78,7 +82,7 @@ const CreateTrip = () => {
                   SELECT RIDE TYPE
                 </button>
               </div>
-              <div className="col-6 p-4">
+              <div className="col-12 col-lg-6 p-lg-4 py-4 px-3">
                 <div className="input-group">
                   <span className="input-group-text seat-label px-xxl-5">
                     SEATS AVAILABLE
@@ -205,49 +209,6 @@ const CreateTrip = () => {
                 </g>
               </svg>
             </button>
-          </div>
-          <div
-            className="modal fade"
-            id="map-modal"
-            tabIndex="-1"
-            aria-labelledby="map-modal"
-            aria-hidden="true"
-          >
-            <div className="modal-dialog modal-dialog-centered">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title" id="address-label">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div className="modal-body">
-                  <a className="skiplink" href="#map">
-                    Go to map
-                  </a>
-                  <div id="map" className="map" tabIndex="0"></div>
-                  <button id="zoom-out">Zoom out</button>
-                  <button id="zoom-in">Zoom in</button>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" className="btn btn-primary">
-                    Save changes
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </main>
       </div>

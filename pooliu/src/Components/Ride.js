@@ -9,7 +9,7 @@ const Ride = () => {
           <div className="col-2 col-lg-1 d-md-flex align-items-center">
             <img src="profile.jpg" alt="" className="profile-pic" />
           </div>
-          <div className="col-6 ">
+          <div className="col-6 pe-0 ps-3">
             <div className="row">
               <div className="col-12 col-lg-6">
                 <h3 className="name">lorem ipsum</h3>
@@ -97,8 +97,8 @@ const Ride = () => {
               </div>
             </div>
           </div>
-          <div className="col-3 col-lg-5 d-flex align-items-center justify-content-end p-0">
-            <div className="row">
+          <div className="col-4 col-lg-5 d-flex align-items-center justify-content-end p-0">
+            <div className="row pe-2">
               <div className="col-12 col-lg-5 me-lg-2 ms-5 ms-lg-0 mb-2 mb-lg-0">
                 <a href="">
                   <svg
