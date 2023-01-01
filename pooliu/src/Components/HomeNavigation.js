@@ -5,11 +5,11 @@ const HomeNavigation = () => {
   return (
     <nav className="navbar p-0">
       <div className="container">
-        <Link to={`pickride`} className="navbar-brand">
+        <Link to='/pickride' className="navbar-brand">
           <img src="logo.svg" alt="logo" />
         </Link>
         <div className="d-flex">
-          <Link to={`login`} className="pe-3">
+          <Link to='/login' className="pe-3">
             <svg
               id="Component_1_1"
               data-name="Component 1 – 1"
@@ -59,7 +59,7 @@ const HomeNavigation = () => {
               </g>
             </svg>
           </Link>
-          <Link to={`nav`}>
+          <Link to='/nav'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="110"

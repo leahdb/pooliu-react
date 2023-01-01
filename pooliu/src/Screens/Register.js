@@ -8,7 +8,7 @@ const Register = () => {
           <div className="col-5 p-0 container-mini container-mini-left">
             <div className="card cards">
               <div className="card-title mt-2 btn d-flex justify-content-lg-start">
-                <Link to={`home`} className="links">
+                <Link to="/home" className="links">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -134,10 +134,9 @@ const Register = () => {
                     <p className="d-flex justify-content-start mt-3">
                       Already have an account? &nbsp;
                       <span>
-                        <a routerLink="/Login" className="link">
-                          {" "}
+                        <Link to="/login" className="link">
                           Login
-                        </a>
+                        </Link>
                       </span>
                     </p>
                   </div>
