@@ -1,9 +1,10 @@
+import { toSize } from "ol/size";
 import React from "react";
 import { Link } from "react-router-dom";
 const SetupAccount = () => {
   return (
-    <div className="auth-pages d-flex align-items-center">
-      <div className="container">
+    <div className="auth-pages d-flex align-items-center pickride-page ">
+      <div className="container setup-page">
         <div className="row  d-flex justify-content-center">
           <div className="card card-sa">
             <div className="row d-flex justify-content-center">
@@ -25,6 +26,125 @@ const SetupAccount = () => {
                   </svg>
                   <span className="mt-1"> Return Home</span>
                 </Link>
+              </div>
+              <div className="card-body">
+                <h1 className="title">SET YOUR PROFILE</h1>
+                <div className="row inputs mt-4 input-verify">
+                  <div className="col-lg-6 col-12 d-flex justify-content-center ">
+                    <input
+                      type="text"
+                      className="form-control my-5 input-verify"
+                      id="inputFirstName"
+                      placeholder="FIRST NAME"
+                    />
+                  </div>
+                  <div className="col-lg-6 col-12 d-flex justify-content-center ">
+                    <input
+                      type="text"
+                      className="form-control my-5 input-verify"
+                      id="inputLastName"
+                      placeholder="LAST NAME"
+                    />
+                  </div>
+                </div>
+                <div className="row inputs  input-verify my-4">
+                  <div className="col-lg-6 col-12 d-flex justify-content-center ">
+                    <input
+                      maxLength={8}
+                      minLength={8}
+                      type="number"
+                      className="form-control my-5 input-verify"
+                      id="inputFirstName"
+                      placeholder="PHONE NUMBER"
+                    />
+                  </div>
+                  <div className="col-lg-6 col-12 d-flex justify-content-center pickride-page px-3 my-5">
+                    <button
+                      type="button"
+                      className="btn btn-outline-primary location-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#map-modal"
+                    >
+                      PROFILE PICTURE{" "}
+                      <span style={{ fontSize: 15 }}>&#40;OPTIONAL&#41;</span>
+                    </button>
+                  </div>
+                  <div className="col-lg-6 col-12 d-flex justify-content-between mt-5 emails">
+                    <label className="email">GENDER:</label>
+                    <div>
+                      <input type="radio" id="liu" name="isLIU" value="1" />
+                      <label for="liu">Male</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="biu" name="isLIU" value="0" />
+                      <label for="biu">Female</label>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-12">
+                    <Link className="d-flex justify-content-end mt-4">
+                      {" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xlink="http://www.w3.org/1999/xlink"
+                        width="117"
+                        height="58"
+                        viewBox="0 0 117 58"
+                      >
+                        <defs>
+                          <filter
+                            id="Rectangle_11"
+                            x="0"
+                            y="0"
+                            width="117"
+                            height="58"
+                            filterUnits="userSpaceOnUse"
+                          >
+                            <feOffset dx="-1" dy="2" input="SourceAlpha" />
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feFlood
+                              flood-color="#143d6d"
+                              flood-opacity="0.502"
+                            />
+                            <feComposite operator="in" in2="blur" />
+                            <feComposite in="SourceGraphic" />
+                          </filter>
+                        </defs>
+                        <g
+                          id="Group_17"
+                          data-name="Group 17"
+                          transform="translate(-1026 -569)"
+                        >
+                          <g
+                            transform="matrix(1, 0, 0, 1, 1026, 569)"
+                            filter="url(#Rectangle_11)"
+                          >
+                            <rect
+                              id="Rectangle_11-2"
+                              data-name="Rectangle 11"
+                              width="99"
+                              height="40"
+                              rx="10"
+                              transform="translate(10 7)"
+                              fill="#143d6d"
+                            />
+                          </g>
+                          <text
+                            id="SAVE"
+                            transform="translate(1066 601)"
+                            fill="#ffb019"
+                            font-size="16"
+                            font-family="SegoeUI-Bold, Segoe UI"
+                            font-weight="700"
+                          >
+                            <tspan x="0" y="0">
+                              SAVE
+                            </tspan>
+                          </text>
+                        </g>
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
