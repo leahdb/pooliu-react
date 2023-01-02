@@ -13,6 +13,7 @@ import Register from "./Screens/Register";
 import Verify from "./Screens/Verify";
 import AllRides from "./Screens/AllRides";
 import CreateTrip from "./Screens/CreateTrip";
+import SetupAccount from "./Screens/SetupAccount";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/create-trip",
     element: <CreateTrip />,
+  },
+  {
+    path: "/setup-account",
+    element: <SetupAccount />
   },
 ]);
 
