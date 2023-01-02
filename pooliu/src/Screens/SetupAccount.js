@@ -13,7 +13,13 @@ function SetupAccount() {
   };
   const handleProfile = () => {
     alert(
-      fname + " " + lname + " Your phone number is " + phoneNumber + gender
+      fname +
+        " " +
+        lname +
+        " Your phone number is " +
+        phoneNumber +
+        " " +
+        gender
     );
   };
   return (
@@ -94,7 +100,6 @@ function SetupAccount() {
                         id="male"
                         name="gender"
                         value="1"
-                        checked={gender === 1}
                         onChange={onOptionChange}
                       />
                       <label for="male">Male</label>
@@ -105,7 +110,6 @@ function SetupAccount() {
                         id="female"
                         name="gender"
                         value="0"
-                        checked={gender === 0}
                         onChange={onOptionChange}
                       />
                       <label for="female">Female</label>
