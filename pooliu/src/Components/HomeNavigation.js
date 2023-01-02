@@ -7,14 +7,14 @@ const HomeNavigation = () => {
       <div className="container nav-container">
         <div className="test row d-flex justify-content-lg-between">
           <div className="col-12 col-lg-6">
-            <Link to={`pickride`} className="navbar-brand">
+            <Link to='/pickride' className="navbar-brand">
               <img src="logo.svg" alt="logo" className="logo" />
             </Link>
           </div>
           <div className="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center">
             <div className="row">
               <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center">
-                <Link to={`login`} className="pe-lg-3">
+                <Link to='/login' className="pe-lg-3">
                   <svg
                     id="Component_1_2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const HomeNavigation = () => {
                 </Link>
               </div>
               <div className="col-12 col-lg-6 d-flex align-items-lg-center justify-content-center">
-                <Link to={`register`}>
+                <Link to='/register'>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="120"

@@ -8,7 +8,7 @@ const Verify = () => {
           <div className="col-5 p-0 container-mini container-mini-left">
             <div className="card cards">
               <div className="card-title mt-2 btn d-flex justify-content-sm-start">
-                <Link to={`home`} className="links">
+                <Link to="/home" className="links">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -78,6 +78,7 @@ const Verify = () => {
                   </div>
                   <div className="row mt-5 mb-5"></div>
                 </div>
+                //Needs Review TODO
                 <a
                   href="login.html"
                   className="d-flex justify-content-center mt-5"
@@ -145,7 +146,7 @@ const Verify = () => {
                   <span>
                     <a href="#" className="link">
                       {" "}
-                      Resend
+                      //Needs review TODO Resend
                     </a>
                   </span>
                 </p>
