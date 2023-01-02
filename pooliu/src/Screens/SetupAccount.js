@@ -8,8 +8,13 @@ function SetupAccount() {
   const [lname, setLname] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [gender, setGender] = useState("");
+  const onOptionChange = (e) => {
+    setGender(e.target.value);
+  };
   const handleProfile = () => {
-    alert(fname + " " + lname + " Your phone number is " + phoneNumber);
+    alert(
+      fname + " " + lname + " Your phone number is " + phoneNumber + gender
+    );
   };
   return (
     <div className="auth-pages d-flex align-items-center pickride-page ">
@@ -84,15 +89,24 @@ function SetupAccount() {
                   <div className="col-lg-6 col-12 d-flex justify-content-between mt-5 emails">
                     <label className="email">GENDER:</label>
                     <div>
-                      <input type="radio" id="male" name="isMale" value="1" />
+                      <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="1"
+                        checked={gender === 1}
+                        onChange={onOptionChange}
+                      />
                       <label for="male">Male</label>
                     </div>
                     <div>
                       <input
                         type="radio"
                         id="female"
-                        name="isFemale"
+                        name="gender"
                         value="0"
+                        checked={gender === 0}
+                        onChange={onOptionChange}
                       />
                       <label for="female">Female</label>
                     </div>
