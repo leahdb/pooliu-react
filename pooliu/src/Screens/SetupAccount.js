@@ -1,7 +1,16 @@
 import { toSize } from "ol/size";
 import React from "react";
 import { Link } from "react-router-dom";
-const SetupAccount = () => {
+import { useState } from "react";
+
+function SetupAccount() {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [gender, setGender] = useState("");
+  const handleProfile = () => {
+    alert(fname + " " + lname + " Your phone number is " + phoneNumber);
+  };
   return (
     <div className="auth-pages d-flex align-items-center pickride-page ">
       <div className="container setup-page">
@@ -33,6 +42,7 @@ const SetupAccount = () => {
                   <div className="col-lg-6 col-12 d-flex justify-content-center ">
                     <input
                       type="text"
+                      onChange={(e) => setFname(e.target.value)}
                       className="form-control my-5 input-verify"
                       id="inputFirstName"
                       placeholder="FIRST NAME"
@@ -41,6 +51,7 @@ const SetupAccount = () => {
                   <div className="col-lg-6 col-12 d-flex justify-content-center ">
                     <input
                       type="text"
+                      onChange={(e) => setLname(e.target.value)}
                       className="form-control my-5 input-verify"
                       id="inputLastName"
                       placeholder="LAST NAME"
@@ -50,6 +61,7 @@ const SetupAccount = () => {
                 <div className="row inputs  input-verify my-4">
                   <div className="col-lg-6 col-12 d-flex justify-content-center ">
                     <input
+                      onChange={(e) => setPhoneNumber(e.target.value)}
                       maxLength={8}
                       minLength={8}
                       type="number"
@@ -72,17 +84,24 @@ const SetupAccount = () => {
                   <div className="col-lg-6 col-12 d-flex justify-content-between mt-5 emails">
                     <label className="email">GENDER:</label>
                     <div>
-                      <input type="radio" id="liu" name="isLIU" value="1" />
-                      <label for="liu">Male</label>
+                      <input type="radio" id="male" name="isMale" value="1" />
+                      <label for="male">Male</label>
                     </div>
                     <div>
-                      <input type="radio" id="biu" name="isLIU" value="0" />
-                      <label for="biu">Female</label>
+                      <input
+                        type="radio"
+                        id="female"
+                        name="isFemale"
+                        value="0"
+                      />
+                      <label for="female">Female</label>
                     </div>
                   </div>
                   <div className="col-lg-6 col-12">
-                    <Link className="d-flex justify-content-end mt-4">
-                      {" "}
+                    <Link
+                      onClick={() => handleProfile()}
+                      className="d-flex justify-content-end mt-4"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xlink="http://www.w3.org/1999/xlink"
@@ -102,8 +121,8 @@ const SetupAccount = () => {
                             <feOffset dx="-1" dy="2" input="SourceAlpha" />
                             <feGaussianBlur stdDeviation="3" result="blur" />
                             <feFlood
-                              flood-color="#143d6d"
-                              flood-opacity="0.502"
+                              floodColor="#143d6d"
+                              floodOpacity="0.502"
                             />
                             <feComposite operator="in" in2="blur" />
                             <feComposite in="SourceGraphic" />
@@ -111,7 +130,7 @@ const SetupAccount = () => {
                         </defs>
                         <g
                           id="Group_17"
-                          data-name="Group 17"
+                          dataName="Group 17"
                           transform="translate(-1026 -569)"
                         >
                           <g
@@ -120,7 +139,7 @@ const SetupAccount = () => {
                           >
                             <rect
                               id="Rectangle_11-2"
-                              data-name="Rectangle 11"
+                              dataName="Rectangle 11"
                               width="99"
                               height="40"
                               rx="10"
@@ -132,9 +151,9 @@ const SetupAccount = () => {
                             id="SAVE"
                             transform="translate(1066 601)"
                             fill="#ffb019"
-                            font-size="16"
-                            font-family="SegoeUI-Bold, Segoe UI"
-                            font-weight="700"
+                            fontSize="16"
+                            fontFamily="SegoeUI-Bold, Segoe UI"
+                            fontWeight="700"
                           >
                             <tspan x="0" y="0">
                               SAVE
@@ -152,5 +171,5 @@ const SetupAccount = () => {
       </div>
     </div>
   );
-};
+}
 export default SetupAccount;
