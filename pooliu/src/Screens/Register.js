@@ -1,6 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Register = () => {
+import { useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+function Register() {
+  const [ID, setID] = useState("");
+  const [pass, setPass] = useState("");
+  const [cpass, setCpass] = useState("");
+  const [isLIU, setLIU] = useState("");
+  const navigate = useNavigate();
+  const onOptionChangeLIU = (e) => {
+    setLIU(e.target.value);
+  };
+
+  const PassLen = pass.toString().split("").length;
+  const IDlen = ID.toString().split("").length;
+  function navigateVer() {
+    if (
+      IDlen > 7 &&
+      IDlen < 9 &&
+      pass === cpass &&
+      PassLen > 7 &&
+      isLIU != ""
+    ) {
+      //👇️ navigate to /verify
+
+      navigate("/verify");
+    }
+  }
   return (
     <div className="auth-pages d-flex align-items-center">
       <div className="container">
@@ -32,7 +58,8 @@ const Register = () => {
                   <div className="row inputs input-verify">
                     <div className="col-12 d-flex justify-content-center ">
                       <input
-                        type="password"
+                        type="number"
+                        onChange={(e) => setID(e.target.value)}
                         className="form-control text"
                         id="inputID"
                         placeholder="ID"
@@ -41,6 +68,7 @@ const Register = () => {
                     <div className="col-12 d-flex justify-content-center">
                       <input
                         type="password"
+                        onChange={(e) => setPass(e.target.value)}
                         className="form-control text"
                         id="password"
                         placeholder="PASSWORD"
@@ -49,6 +77,7 @@ const Register = () => {
                     <div className="col-12 d-flex justify-content-center">
                       <input
                         type="password"
+                        onChange={(e) => setCpass(e.target.value)}
                         className="form-control text"
                         id="passwordCon"
                         placeholder="CONFIRM PASSWORD"
@@ -57,19 +86,31 @@ const Register = () => {
                     <div className="col-10 d-flex justify-content-between mt-5 emails">
                       <label className="email">EMAIL:</label>
                       <div>
-                        <input type="radio" id="liu" name="isLIU" value="1" />
+                        <input
+                          type="radio"
+                          id="liu"
+                          name="isLIU"
+                          value="1"
+                          onChange={onOptionChangeLIU}
+                        />
                         <label for="liu">LIU</label>
                       </div>
                       <div>
-                        <input type="radio" id="biu" name="isLIU" value="0" />
+                        <input
+                          type="radio"
+                          id="biu"
+                          name="isLIU"
+                          value="0"
+                          onChange={onOptionChangeLIU}
+                        />
                         <label for="biu">BIU</label>
                       </div>
                     </div>
-                    <a
-                      href="verify.html"
-                      className="submit d-flex justify-content-center"
-                    >
+                    <div className="submit d-flex justify-content-center">
                       <svg
+                        onClick={() => {
+                          navigateVer();
+                        }}
                         xmlns="http://www.w3.org/2000/svg"
                         xlink="http://www.w3.org/1999/xlink"
                         width="218"
@@ -130,8 +171,9 @@ const Register = () => {
                           </text>
                         </g>
                       </svg>
-                    </a>
-                    <p className="d-flex justify-content-start mt-3">
+                    </div>
+
+                    <p className="d-flex justify-content-start mt-2">
                       Already have an account? &nbsp;
                       <span>
                         <Link to="/login" className="link">
@@ -151,6 +193,6 @@ const Register = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Register;

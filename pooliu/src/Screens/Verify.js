@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Verify = () => {
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+function Verify() {
+  const { ID, password, isLIU } = this.props.location.state;
+  alert(ID + password + isLIU);
   return (
     <div className="auth-pages d-flex align-items-center">
       <div className="container">
@@ -159,6 +164,6 @@ const Verify = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Verify;
