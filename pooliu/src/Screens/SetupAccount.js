@@ -1,4 +1,3 @@
-import { toSize } from "ol/size";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -8,9 +7,26 @@ function SetupAccount() {
   const [lname, setLname] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [gender, setGender] = useState("");
+  const [stylePP, setStylePP] = useState(
+    "col-12 d-flex justify-content-center my-4 choose-pic"
+  );
   const onOptionChange = (e) => {
     setGender(e.target.value);
   };
+  const [profilePic, setProfilePic] = useState();
+  function handleProfilePicture(e) {
+    console.log(e.target.files);
+    setProfilePic(URL.createObjectURL(e.target.files[0]));
+  }
+
+  function showChooseFile() {
+    if (stylePP === "col-12 d-flex justify-content-center my-4 choose-pic") {
+      setStylePP("col-12 d-flex justify-content-center my-4");
+    }
+    if (stylePP === "col-12 d-flex justify-content-center my-4") {
+      setStylePP("col-12 d-flex justify-content-center my-4 choose-pic");
+    }
+  }
   const handleProfile = () => {
     alert(
       fname +
@@ -87,10 +103,22 @@ function SetupAccount() {
                       className="btn btn-outline-primary location-btn"
                       data-bs-toggle="modal"
                       data-bs-target="#map-modal"
+                      onClick={() => showChooseFile()}
                     >
-                      PROFILE PICTURE{" "}
+                      PROFILE PICTURE
                       <span style={{ fontSize: 15 }}>&#40;OPTIONAL&#41;</span>
                     </button>
+                  </div>
+                  <div className={stylePP}>
+                    <div className="row">
+                      <div className="col-10">
+                        <input
+                          className="btn btn btn-outline-primary location-btn"
+                          type="file"
+                          onChange={handleProfilePicture}
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6 col-12 d-flex justify-content-between mt-5 emails">
                     <label className="email">GENDER:</label>
