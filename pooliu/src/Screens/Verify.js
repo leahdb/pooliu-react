@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Verify() {
-  const { ID, password, isLIU } = this.props.location.state;
-  alert(ID + password + isLIU);
+function Verify(props) {
+  const id = props.ID;
+  const password = props.pass;
+  const isLIU = props.isLIU;
+
   return (
     <div className="auth-pages d-flex align-items-center">
       <div className="container">

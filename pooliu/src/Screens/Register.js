@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import Verify from "./Verify";
+import { useNavigate } from "react-router-dom";
 function Register() {
   const [ID, setID] = useState("");
   const [pass, setPass] = useState("");
@@ -11,6 +12,7 @@ function Register() {
   const onOptionChangeLIU = (e) => {
     setLIU(e.target.value);
   };
+  const [data, setData] = [ID, pass, isLIU];
 
   const PassLen = pass.toString().split("").length;
   const IDlen = ID.toString().split("").length;
